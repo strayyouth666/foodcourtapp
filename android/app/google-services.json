@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "294028986075",
+    "project_id": "foodcourtku",
+    "storage_bucket": "foodcourtku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294028986075:android:40848333980a7adfe1aefe",
+        "android_client_info": {
+          "package_name": "com.example.foodcourtapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294028986075-kltst3a9uh37hrgalgjdv9uhisi5qqt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkAR6RTTKtX8QcgodtO0SLl9rev6vqKNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294028986075-kltst3a9uh37hrgalgjdv9uhisi5qqt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294028986075:android:a730fc5fed8abff4e1aefe",
+        "android_client_info": {
+          "package_name": "com.example.foodcourtku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294028986075-kltst3a9uh37hrgalgjdv9uhisi5qqt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkAR6RTTKtX8QcgodtO0SLl9rev6vqKNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294028986075-kltst3a9uh37hrgalgjdv9uhisi5qqt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
