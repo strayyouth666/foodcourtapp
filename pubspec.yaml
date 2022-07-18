@@ -14,13 +14,12 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # Read more about Android versioning at https://developer.android.com/studio/publish/versioning
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
-<<<<<<< HEAD
+
 # geofence_service: ^3.4.8
 # fl_location: ^1.2.1
 # flutter_foreground_task: ^3.5.5
 # flutter_activity_recognition: ^1.2.1
-=======
->>>>>>> 1379719a51779412ce522521f088fbb695854b72
+
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 version: 1.0.0+1
 
@@ -31,30 +30,18 @@ dependencies:
 
   http: ^0.13.3
   intl: ^0.17.0
-<<<<<<< HEAD
   iconly: 1.0.0
-=======
->>>>>>> 1379719a51779412ce522521f088fbb695854b72
   provider: ^5.0.0
   package_info: ^2.0.2
   device_info: ^2.0.3
   shared_preferences: ^2.0.5
   rxdart: 0.27.2
-<<<<<<< HEAD
   firebase_auth: ^3.1.0
   flutter_svg: 1.0.0
   firebase_core: ^1.7.0
   firebase_database: ^9.0.0
   firebase_analytics: ^8.3.4
   cloud_firestore: ^3.1.0
-=======
-  firebase_auth: ^3.3.0
-  flutter_svg: 0.21.0
-  firebase_core: ^1.7.0
-  firebase_database: ^8.0.1
-  firebase_analytics: ^8.3.4
-  cloud_firestore: ^2.5.3
->>>>>>> 1379719a51779412ce522521f088fbb695854b72
   flutter_polyline_points: ^1.0.0
   google_maps_flutter: 2.0.8
   google_maps_webservice: 0.0.16
@@ -70,7 +57,6 @@ dependencies:
   dio: ^4.0.4
   location: ^4.3.0
   maps_launcher: ^2.0.1
-<<<<<<< HEAD
   image_picker: ^0.8.5+3
   dots_indicator: ^2.1.0
   get_storage: ^2.0.3
@@ -85,21 +71,15 @@ dependencies:
   sqflite: ^2.0.2
   path_provider: ^2.0.4
   flutter_lints: ^1.0.0
-=======
 
->>>>>>> 1379719a51779412ce522521f088fbb695854b72
+
+
 
   flutter:
     sdk: flutter
 
-<<<<<<< HEAD
 
 
-=======
-  cupertino_icons: 1.0.4
-  sqflite: ^2.0.2
-  path_provider: ^2.0.4
->>>>>>> 1379719a51779412ce522521f088fbb695854b72
 
 dev_dependencies:
   flutter_test:
@@ -116,10 +96,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-<<<<<<< HEAD
+
   # Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
-=======
->>>>>>> 1379719a51779412ce522521f088fbb695854b72
+
   assets:
     - lib/pict/burg.svg
     - lib/pict/fried-rice-2.svg
@@ -133,13 +112,10 @@ flutter:
     - lib/pict/nusa.jpg
     - lib/pict/taro.jpg
     - lib/pict/thai.jpg
-<<<<<<< HEAD
     - lib/pict/ob1.png
     - lib/pict/ob2.png
     - lib/pict/ob3.png
     - lib/pict/ob4.png
-=======
->>>>>>> 1379719a51779412ce522521f088fbb695854b72
 
 
 
