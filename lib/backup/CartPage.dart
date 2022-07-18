@@ -1,4 +1,7 @@
 import 'package:foodcourtapp/controller/homepageController.dart';
+
+import 'package:foodcourtapp/models/ItemModel.dart';
+
 import 'package:foodcourtapp/models/ModelItem.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

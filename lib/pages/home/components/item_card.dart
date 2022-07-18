@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+
+import 'package:foodcourtapp/models/ItemModel.dart';
+
 import 'package:foodcourtapp/models/ModelItem.dart';
+
 import 'package:foodcourtapp/widgets/constants.dart';
 
 class ItemCard extends StatelessWidget {

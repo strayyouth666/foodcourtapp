@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:foodcourtapp/controller/homepageController.dart';
+import 'package:foodcourtapp/models/ItemModel.dart';
 import 'package:foodcourtapp/models/ModelItem.dart';
 // import 'package:flutter_svg/svg.dart';
 import 'package:foodcourtapp/models/cart.dart';
 import 'package:foodcourtapp/widgets/constants.dart';
 import 'package:get/get.dart';
 // import 'package:foodcourtapp/widgets/size_config.dart';
+// import 'cart_card.dart';
 import 'cart_card.dart';
 
 class Body extends StatefulWidget {
@@ -160,7 +162,7 @@ class BodyState extends State<Body> {
       padding:
       EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: ListView.builder(
-        itemCount: carts.length,
+        // itemCount: cart.length,
         itemBuilder: (context, index) => Padding(
           padding: EdgeInsets.symmetric(vertical: 10),
             child: Column(

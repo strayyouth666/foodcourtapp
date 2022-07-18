@@ -1,14 +1,26 @@
 // import 'dart:async';
 // import 'dart:developer';
+// import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:foodcourtapp/pages/beranda/main_screen.dart';
+import 'package:foodcourtapp/pages/beranda/on_boarding_screen.dart';
+// import 'package:foodcourtapp/on_boarding_screen.dart';
+// import 'package:flutter/cupertino.dart';
+// import 'package:firebase_database/firebase_database.dart';
+// import 'package:foodcourtapp/models/ItemModel.dart';f
+// import 'package:foodcourtapp/pages/home/HomePage.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:firebase_database/firebase_database.dart';
 // import 'package:foodcourtapp/models/ModelItem.dart';
 import 'package:foodcourtapp/pages/beranda/loginpage.dart';
-import 'package:foodcourtapp/pages/home/HomePage.dart';
+// import 'package:foodcourtapp/pages/home/HomePage.dart';
 import 'package:foodcourtapp/widgets/constants.dart';
 import 'package:get/get.dart';
 // import 'package:foodcourtapp/services/itemServices.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+// import '../models/ItemModel.dart';
+// import '../pages/beranda/loginpage.dart';
+// import '../widgets/constants.dart';
 
 class AuthController extends GetxController {
 
@@ -16,6 +28,11 @@ class AuthController extends GetxController {
   late Rx<User?> firebaseUser;
   late Rx<GoogleSignInAccount?> googleSignInAccount;
   bool isSwitched = false;
+
+
+  // final ItemModel item;
+  // AuthController({Key? key, required this.item,});
+
 
   @override
   void onReady() {
@@ -36,10 +53,11 @@ class AuthController extends GetxController {
   _setInitialScreen(User? user) {
     if (user == null) {
       // if the user is not found then the user is navigated to the Register Screen
-      Get.offAll(() => LoginPage());
+      Get.offAll(LoginPage());
     } else {
       // if the user exists and logged in the the user is navigated to the Home Screen
-      Get.offAll(() => HomePage());
+      Get.offAll(MainScreen());
+      //(item:item));
     }
   }
 
@@ -47,12 +65,23 @@ class AuthController extends GetxController {
     print(googleSignInAccount);
     if (googleSignInAccount == null) {
       // if the user is not found then the user is navigated to the Register Screen
-      Get.offAll(() => LoginPage()) ;
+      Get.offAll(LoginPage());
     } else {
       // if the user exists and logged in the the user is navigated to the Home Screen
-      Get.offAll(()=> HomePage());
+      Get.offAll(OnBoardingScreen());
     }
   }
+
+  // GET UID
+  // Future<String> getCurrentUID() async {
+  //   return (await firebaseUser.currentUser()).uid;
+  // }
+
+  // GET CURRENT USER
+  // Future getCurrentUser() async {
+  //   return await auth.currentUser();
+  // }
+
 
   void signInWithGoogle() async {
     try {
@@ -82,7 +111,8 @@ class AuthController extends GetxController {
     }
   }
 
-  void register(String email, String password, String username, String fullname) async {
+  void register(String email, String password, String username,
+      String fullname) async {
     try {
       await auth.createUserWithEmailAndPassword(
           email: email, password: password);
@@ -99,7 +129,7 @@ class AuthController extends GetxController {
   void login(String email, String password) async {
     try {
       await auth.signInWithEmailAndPassword(email: email, password: password);
-    } catch (e){
+    } catch (e) {
       Get.snackbar(
         "Error login in",
         e.toString(),
@@ -119,5 +149,4 @@ class AuthController extends GetxController {
     // _humiditySubs.cancel();
     // _temperatureSubs.cancel();
   }
-
 }

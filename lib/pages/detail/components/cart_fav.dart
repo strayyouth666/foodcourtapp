@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:foodcourtapp/controller/homepageController.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
+import 'package:foodcourtapp/models/ItemModel.dart';
+// import 'package:foodcourtapp/pages/detail/components/cart_count.dart';
+import 'package:get/get.dart';
+// import 'package:foodcourtapp/models/ItemModel.dart';
+
 import 'package:foodcourtapp/models/ModelItem.dart';
 import 'package:foodcourtapp/pages/detail/components/cart_count.dart';
 import 'package:foodcourtapp/widgets/constants.dart';
 import 'package:get/get.dart';
 // import 'package:foodcourtapp/models/ModelItem.dart';
+
 
 class CounterWithFavBtn extends StatefulWidget {
   final ItemModel item;

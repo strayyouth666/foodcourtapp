@@ -1,14 +1,11 @@
-
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:foodcourtapp/controller/homepageController.dart';
-import 'package:foodcourtapp/models/ModelItem.dart';
+import 'package:foodcourtapp/models/ItemModel.dart';
 import 'package:foodcourtapp/pages/detail/components/tittle_pict.dart';
 import 'package:foodcourtapp/widgets/constants.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_state.dart';
-import 'package:foodcourtapp/widgets/CustomButton.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:foodcourtapp/models/ModelItem.dart';
 import 'add_cart.dart';
 import 'cart_fav.dart';
 import 'desc.dart';

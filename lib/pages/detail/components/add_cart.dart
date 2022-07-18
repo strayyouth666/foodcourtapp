@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:foodcourtapp/controller/homepageController.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 // import 'package:foodcourtapp/backup/homee.dart';
+<<<<<<< HEAD
+=======
+import 'package:foodcourtapp/models/ItemModel.dart';
+// import 'package:foodcourtapp/pages/cart/cart_screen.dart';
+// import 'package:foodcourtapp/widgets/CustomButton.dart';
+>>>>>>> 27f5e05 (0.0.1)
 import 'package:foodcourtapp/models/ModelItem.dart';
 import 'package:foodcourtapp/pages/cart/cart_screen.dart';
 import 'package:foodcourtapp/widgets/CustomButton.dart';
@@ -32,6 +38,10 @@ class AddToCart extends StatelessWidget {
                 color: item.color,
               ),
             ),
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27f5e05 (0.0.1)
             child: IconButton(
               icon: const Icon(Icons.shopping_cart),
                 color: item.color,

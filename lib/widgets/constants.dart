@@ -15,11 +15,22 @@ const kDefaultPadding = 20.0;
 const cartBarHeight = 100.0;
 const headerHeight = 85.0;
 
+
+const kPageViewTextStyle = TextStyle(
+  fontSize: 25, fontWeight: FontWeight.w600,
+);
+
+const kApiKey = 'AIzaSyBhHHqXdSjKpUnpLPQHuAXmVqKeH0u_FHM';
+
 const panelTransition = Duration(milliseconds: 500);
 
 AuthController authController = AuthController.instance;
 FirebaseAuth auth = FirebaseAuth.instance;
+
+FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
+
 // FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
+
 GoogleSignIn googleSign = GoogleSignIn();
 
 final Future<FirebaseApp> firebaseInitialization = Firebase.initializeApp(

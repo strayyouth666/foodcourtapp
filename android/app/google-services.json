@@ -14,6 +14,17 @@
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
+          "client_id": "294028986075-6232a012evqdjbs2rjsaesj28l2demun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodcourtapp",
+            "certificate_hash": "f226afeffa1c8659f48fe6e13e8466da2bbb8e8c"
+          }
+        },
+        {
+=======
+>>>>>>> 1379719a51779412ce522521f088fbb695854b72
           "client_id": "294028986075-kltst3a9uh37hrgalgjdv9uhisi5qqt1.apps.googleusercontent.com",
           "client_type": 3
         }

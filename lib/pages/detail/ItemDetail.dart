@@ -1,7 +1,14 @@
+
+// import 'package:flutter/foundation.dart';
+import 'package:foodcourtapp/controller/homepageController.dart';
+// import 'package:flutter_svg/flutter_svg.dart';
+import 'package:foodcourtapp/models/ItemModel.dart';
+
 import 'package:flutter/foundation.dart';
 import 'package:foodcourtapp/controller/homepageController.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 import 'package:foodcourtapp/models/ModelItem.dart';
+
 import 'package:foodcourtapp/pages/cart/cart_screen.dart';
 import 'package:foodcourtapp/pages/detail/components/body.dart';
 import 'package:flutter/material.dart';
@@ -56,4 +63,14 @@ class ItemDetail extends StatelessWidget {
     ],
   );
 }
+
+}
+
+class ItemDetailBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut<HomePageController>(
+          () => HomePageController(),
+    );
+  }
 }

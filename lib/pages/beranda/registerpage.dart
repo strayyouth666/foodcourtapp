@@ -1,13 +1,18 @@
 import 'package:animate_do/animate_do.dart';
+
+
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/widgets.dart';
+// import 'package:flutter/cupertino.dart';
+// import 'package:flutter/widgets.dart';
+// import 'package:flutter/material.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:foodcourtapp/controller/authController.dart';
 import 'package:foodcourtapp/pages/beranda/loginpage.dart';
 import 'package:foodcourtapp/widgets/constants.dart';
 import 'package:get/get.dart';
 
+// import '../../controller/homepageController.dart';
 
 class RegisterPage extends GetView<AuthController> {
   final TextEditingController _emailController = TextEditingController();
@@ -295,6 +300,16 @@ class RegisterPage extends GetView<AuthController> {
     );
   }
 }
+
+class RegisterPageBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut<AuthController>(
+          () => AuthController(),
+    );
+  }
+}
+
 //       body: SizedBox(
 //         // children: <Widget>[
 //
