@@ -6,6 +6,10 @@ import 'package:foodcourtapp/widgets/DotWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:foodcourtapp/models/ModelItem.dart';
+import 'package:get/get.dart';
+import 'package:foodcourtapp/services/itemServices.dart';
 
 
 class ItemPage extends StatefulWidget {
